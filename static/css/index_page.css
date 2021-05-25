@@ -1,0 +1,36 @@
+.middle-section div {
+    width: 30%;
+    float: left;
+}
+
+.float-left {
+    padding: 0 1em 0 1em;
+}
+
+.float-left:first-of-type {
+    padding: 0 1em 0 0;
+}
+
+.float-left:last-of-type {
+    padding: 0 0 0 1em;
+}
+
+.hobbies {
+    clear: both;
+}
+
+.hobbies-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.hobbies img{
+    width: 500px;
+}
+
+.main-header p {
+    grid-column: 1/-1;
+    text-align: left;
+    margin-top: 10em;
+}

@@ -1,0 +1,23 @@
+.before-poly-section > .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+.item {
+    padding: 20px 0 20px 0;
+}
+
+.item > img{
+    width: 500px;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+
+td{
+    border: 1px solid black;
+}

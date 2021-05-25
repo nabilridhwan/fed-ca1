@@ -1,0 +1,17 @@
+.current-exp-section> .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.item {
+    padding: 20px 0 20px 0;
+}
+
+.item h3{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.item > img{
+    width: 500px;
+}
