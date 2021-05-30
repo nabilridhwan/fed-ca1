@@ -1,4 +1,4 @@
-.current-exp-section> .item{
+.my-future-section> .item{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Feedback</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/page_styles.css">
+    <link rel="stylesheet" href="static/css/feedback_page.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" id="nav-brand">Nabil<span class="text-pink">.</span></a>
+
+        <ul id="nav-pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="before_poly.html">Before Poly</a></li>
+            <li><a href="life_in_poly.html">Life in Poly</a></li>
+            <li><a href="my_future.html">My Future</a></li>
+            <li><a class="active" href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-header">
+        <div class="content">
+            <h1>Feedback<span class="text-pink">.</span></h1>
+            <h3>do you have something to tell me?</h3>
+        </div>
+    </div>
+
+    <!-- TODO: Add these back: action="#" method="post" -->
+    <form class="form-section">
+        <label for="fullname">Name:</label>
+        <input type="text" name="fullname" id="fullnameControl" placeholder="John Smith">
+
+        <br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dobControl">
+
+        <br>
+        
+        <!-- TODO: Add phone number regex format -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" name="phoneNumber" id="phoneNumberControl" pattern="\d{4} \d{4}" placeholder="8468 1234" required>
+
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="emailControl" placeholder="johnsmith@email.com" required>
+
+        <br>
+        
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="countryControl" placeholder="Singapore">
+
+        <br>
+
+        <label for="male">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br>
+        
+        <label for="favColor">Favorite Color:</label>
+        <input type="color" name="favColor" id="favColorControl">
+
+        <br>
+
+
+        <label for="rating">Rate my site:</label>
+        <input type="range" name="rating" id="ratingControl" min="1" max="10">
+
+        <br>
+        <label for="message">What's your message?</label>
+        <textarea name="message" id="messageControl" cols="30" rows="10" placeholder="Your website is..."></textarea>
+
+        <input type="submit" value="Submit" id="submitButton">
+    </form>
+
+    <footer>
+        <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
+    </footer>
+</body>
+
+</html>
