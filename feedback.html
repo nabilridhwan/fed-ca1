@@ -35,56 +35,82 @@
 
     <!-- TODO: Add these back: action="#" method="post" -->
     <form class="form-section">
-        <label for="fullname">Name:</label>
-        <input type="text" name="fullname" id="fullnameControl" placeholder="John Smith">
-
-        <br>
-        
-        <label for="dob">Date of Birth:</label>
-        <input type="date" name="dob" id="dobControl">
-
-        <br>
-        
-        <!-- TODO: Add phone number regex format -->
-        <label for="phoneNumber">Phone Number:</label>
-        <input type="text" name="phoneNumber" id="phoneNumberControl" pattern="\d{4} \d{4}" placeholder="8468 1234" required>
-
-        <br>
-        
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="emailControl" placeholder="johnsmith@email.com" required>
-
-        <br>
-        
-        <label for="country">Country:</label>
-        <input type="text" name="country" id="countryControl" placeholder="Singapore">
+        <div class="form-input">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullnameControl" placeholder="John Smith">
+        </div>
 
         <br>
 
-        <label for="male">Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
-
-        <br>
-        
-        <label for="favColor">Favorite Color:</label>
-        <input type="color" name="favColor" id="favColorControl">
+        <div class="form-input">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dobControl">
+        </div>
 
         <br>
 
-
-        <label for="rating">Rate my site:</label>
-        <input type="range" name="rating" id="ratingControl" min="1" max="10">
+        <div class="form-input">
+            <!-- TODO: Add phone number regex format -->
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" name="phoneNumber" id="phoneNumberControl" pattern="\d{4} \d{4}" placeholder="8468 1234"
+                required>
+        </div>
 
         <br>
-        <label for="message">What's your message?</label>
-        <textarea name="message" id="messageControl" cols="30" rows="10" placeholder="Your website is..."></textarea>
 
-        <input type="submit" value="Submit" id="submitButton">
+        <div class="form-input">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="emailControl" placeholder="johnsmith@email.com" required>
+        </div>
+
+        <br>
+
+        <div class="form-input">
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="countryControl" placeholder="Singapore">
+        </div>
+
+        <br>
+
+        <label for="male">
+            <strong>Gender</strong>
+        </label>
+        <div class="form-input">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+        </div>
+        <div class="form-input">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+        <div class="form-input">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+
+        <br>
+
+        <div class="form-input">
+            <label for="favColor">Favorite Color:</label>
+            <input type="color" name="favColor" id="favColorControl">
+        </div>
+
+        <br>
+
+
+        <div class="form-input">
+            <label for="rating">Rate my site:</label>
+            <input type="range" name="rating" id="ratingControl" min="1" max="10">
+        </div>
+
+        <br>
+        <div class="form-input">
+            <label for="message">What's your message?</label>
+            <textarea name="message" id="messageControl" cols="30" rows="10"
+                placeholder="Your website is..."></textarea>
+        </div>
+
+        <button id="submitButton">Submit</button>
     </form>
 
     <footer>
