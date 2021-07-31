@@ -8,68 +8,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="static/css/page_styles.css">
-    <link rel="stylesheet" href="static/css/my_future_page.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <a href="#" id="nav-brand">Nabil<span class="text-pink">.</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-md">
+            <a class="navbar-brand" id="nav-brand" href="index.html">Nabil<span class="text-pink">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="before_poly.html">Before Poly</a>
+                    </li>
 
-        <ul id="nav-pages">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="before_poly.html">Before Poly</a></li>
-            <li><a href="life_in_poly.html">Life in Poly</a></li>
-            <li><a class="active" href="my_future.html">My Future</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link " href="life_in_poly.html">Life in Poly</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="my_future.html">My Future</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="main-header">
-        <div class="content">
+    <div class="container">
+        <div class="main-header my-5">
             <h1>My Future<span class="text-pink">.</span></h1>
             <h3>what do i want to be when i grow up?</h3>
         </div>
+
+        <section class="my-future-section">
+
+            <div class="row my-5">
+                <div class="col-lg-6">
+                    <h2>My Course</h2>
+                    <p>I'm in the Common ICT Programme. This common course allows us to make an informed decision after
+                        the
+                        first semester to split into three different courses: AI and Analytics, Information Technology
+                        and
+                        Security Management. I feel lucky to be in this course as I am somewhat clear of my future
+                        profession. Still, I want to have the luxury of exploring other paths in SoC.</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2>School of Computing</h2>
+                    <p>As I said previously, I am somewhat clear of my future profession. I want to be a Full Stack Web
+                        Developer, Back End Developer and Software Engineer in descending order.</p>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-6">
+                    <h2>Where do I see myself in 5 years time?</h2>
+                    <p>This is a hard question but I see myself in NTU taking computer science to further my dream to
+                        become
+                        a software engineer.</p>
+                </div>
+
+                <figure class="col-lg-6 figure">
+                    <img src="https://prod-c2i.s3.amazonaws.com/articles/16148548816040bae1dcb9a.jpg"
+                        class="figure-img img-fluid rounded" alt="Nanyang Technological University">
+                    <figcaption class="figure-caption text-end">Nanyang Technological University</figcaption>
+                </figure>
+            </div>
+        </section>
     </div>
-
-    <section class="my-future-section">
-
-        <div class="item">
-            <div class="content">
-                <h2>My Course</h2>
-                <p>I'm in the Common ICT Programme. This common course allows us to make an informed decision after the
-                    first semester to split into three different courses: AI and Analytics, Information Technology and
-                    Security Management. I feel lucky to be in this course as I am somewhat clear of my future
-                    profession. Still, I want to have the luxury of exploring other paths in SoC.</p>
-            </div>
-
-            <div class="content">
-                <h2>School of Computing</h2>
-                <p>As I said previously, I am somewhat clear of my future profession. I want to be a Full Stack Web
-                    Developer, Back End Developer and Software Engineer in descending order.</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="content">
-                <h2>Where do I see myself in 5 years time?</h2>
-                <p>This is a hard question but I see myself in NTU taking computer science to further my dream to become
-                    a software engineer.</p>
-            </div>
-
-            <figure>
-                <img src="https://prod-c2i.s3.amazonaws.com/articles/16148548816040bae1dcb9a.jpg"
-                    alt="Nanyang Technological University">
-                <figcaption>Nanyang Technological University</figcaption>
-            </figure>
-        </div>
-    </section>
 
     <footer>
         <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
     </footer>
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <title>Life in Poly</title>
@@ -7,65 +8,140 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="static/css/page_styles.css">
-    <link rel="stylesheet" href="static/css/life_in_poly_page.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <a href="#" id="nav-brand">Nabil<span class="text-pink">.</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-md">
+            <a class="navbar-brand" id="nav-brand" href="index.html">Nabil<span class="text-pink">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="before_poly.html">Before Poly</a>
+                    </li>
 
-        <ul id="nav-pages">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="before_poly.html">Before Poly</a></li>
-            <li><a class="active" href="life_in_poly.html">Life in Poly</a></li>
-            <li><a href="my_future.html">My Future</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="life_in_poly.html">Life in Poly</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_future.html">My Future</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="main-header">
-        <div class="content">
-            <h1>Life in Poly<span class="text-pink">.</span></h1>
-            <h3>my life in singapore polytechnic</h3>
+    <div class="container">
+        <div class="main-header my-5 py-5">
+            <div class="content">
+                <h1>Life in Poly<span class="text-pink">.</span></h1>
+                <h3>my life in singapore polytechnic</h3>
+            </div>
         </div>
+
+        <section class="current-exp-section">
+
+            <h1>My current experiences in...</h1>
+            <div class="row my-5">
+                <div class="col-lg-6">
+                    <h3>Singapore Polytechnic</h3>
+                    <p>My current experience in Singapore Polytechnic is delightful. I got to meet many different
+                        friends
+                        from many different backgrounds. The amount of freedom given to us at the tertiary level of
+                        education is a lot; We can wear any clothes we want!</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>School of Computing</h3>
+                    <p>Many people in the School of Computing have a previous background in programming, which is a
+                        relief!
+                        I get to share my passion with other people with the same passion! That makes my experience a
+                        good
+                        one.</p>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="content col-lg-6">
+                    <h3>SP MLS / SP Dikir</h3>
+                    <p>I am part of SP Dikir group which is a performing arts sector of SP Malay Language Society.
+                        Everyone
+                        in the CCA is very friendly, goofy and fun to be around with.</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/images/pfp-1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/pfp-2.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/pfp-3.jpeg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="static/images/pfp-4.jpeg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="static/images/khair-sleeping.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="static/images/cca_bonding_session.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <figure class="col-lg-6 figure">
+                    <img src="static/images/cca_bonding_session.jpeg" alt="CCA Bonding Session in MS Teams"
+                        class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption text-end">
+                        SP Dikir Barat CCA bonding session in May 2021.
+                    </figcaption>
+                </figure> -->
+
+            </div>
+        </section>
     </div>
-
-    <section class="current-exp-section">
-
-        <h2>My current experiences in...</h2>
-        <div class="item">
-            <div class="content">
-                <h3>Singapore Polytechnic</h3>
-                <p>My current experience in Singapore Polytechnic is delightful. I got to meet many different friends
-                    from many different backgrounds. The amount of freedom given to us at the tertiary level of
-                    education is a lot; We can wear any clothes we want!</p>
-            </div>
-
-            <div class="content">
-                <h3>School of Computing</h3>
-                <p>Many people in the School of Computing have a previous background in programming, which is a relief!
-                    I get to share my passion with other people with the same passion! That makes my experience a good
-                    one.</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="content">
-                <h3>SP MLS / SP Dikir</h3>
-                <p>I am part of SP Dikir group which is a performing arts sector of SP Malay Language Society. Everyone
-                    in the CCA is very friendly, goofy and fun to be around with.</p>
-            </div>
-
-            <figure>
-                <img src="static/images/cca_bonding_session.jpeg" alt="CCA Bonding Session in MS Teams">
-
-                <figcaption>SP Dikir Barat CCA bonding session in May 2021.</figcaption>
-            </figure>
-        </div>
-    </section>
 
     <footer>
         <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>

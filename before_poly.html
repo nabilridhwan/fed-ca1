@@ -5,77 +5,117 @@
 
     <title>Before Poly</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/page_styles.css">
-    <link rel="stylesheet" href="static/css/before_poly_page.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <a href="#" id="nav-brand">Nabil<span class="text-pink">.</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-md">
+            <a class="navbar-brand" id="nav-brand" href="index.html">Nabil<span class="text-pink">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="before_poly.html">Before Poly</a>
+                    </li>
 
-        <ul id="nav-pages">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="before_poly.html">Before Poly</a></li>
-            <li><a href="life_in_poly.html">Life in Poly</a></li>
-            <li><a href="my_future.html">My Future</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="life_in_poly.html">Life in Poly</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_future.html">My Future</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="main-header">
-        <div class="content">
-            <h1>My Past<span class="text-pink">.</span></h1>
-            <h3>once upon a time...</h3>
-        </div>
-        <img src="./static/images/my-past-header.png" alt="My Past Header">
-    </div>
 
-    <section class="before-poly-section">
-        <div class="item">
-            <div class="content">
+    <div class="container">
+        <div class="main-header row align-items-center py-5">
+            <div class="col-lg-6 col-md-12">
+                <h1>My Past<span class="text-pink">.</span></h1>
+                <h3>once upon a time...</h3>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="./static/images/my-past-header.png" alt="My Past Header" width="100%">
+            </div>
+        </div>
+
+        <!-- School Content -->
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
                 <h2>Primary School</h2>
                 <p>
-                    I graduated from West Grove Primary School in 2015 with a PSLE score of 186. It was also the first
-                    major examination that I passed my Mathematics and it was a big achievement because in the whole of
+                    I graduated from West Grove Primary School in 2015 with a PSLE score of 186. It was also the
+                    first
+                    major examination that I passed my Mathematics and it was a big achievement because in the whole
+                    of
                     Primary 6, I have been bad at Mathematics constantly.
                 </p>
-            </div>
 
-            <figure>
-                <img src="https://parenthoodlife.sg/wp-content/uploads/2019/12/CEE0F351-0031-461E-87FA-165AA97A6577.png"
-                    alt="West Grove Primary School">
-                <figcaption>West Grove Primary School</figcaption>
-            </figure>
+            </div>
+            <div class="col-lg-6 col-md-12">
+
+                <figure class="figure">
+                    <img src="https://parenthoodlife.sg/wp-content/uploads/2019/12/CEE0F351-0031-461E-87FA-165AA97A6577.png"
+                        alt="West Grove Primary School" class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption text-end">West Grove Primary School</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="item">
-            <div class="content">
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
                 <h2>Secondary School</h2>
                 <p>
-                    In 2019, I graduated from Westwood Secondary School with an N-Level certificate score of 10. Shortly
+                    In 2019, I graduated from Westwood Secondary School with an N-Level certificate score of 10.
+                    Shortly
                     after, in April of 2020, I joined Singapore Polytechnic via the Polytechnic Foundation Programme
                     (PFP).
                 </p>
-            </div>
 
-            <figure>
-                <img src="static/images/westwood_secondary.png" alt="Illustration of Westwood Secondary School">
-                <figcaption>
-                    My illustration of Westwood Secondary School's parade square.
-                </figcaption>
-            </figure>
+            </div>
+            <div class="col-lg-6 col-md-12">
+
+                <figure class="figure">
+                    <img src="static/images/westwood_secondary.png" alt="Illustration of Westwood Secondary School"
+                        class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption text-end">
+                        My illustration of Westwood Secondary School's parade square.
+                    </figcaption>
+                </figure>
+            </div>
         </div>
 
         <h2>Credentials</h2>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
-                    <td>Year</td>
-                    <td>Award</td>
+                    <td scope="col">Year</td>
+                    <td scope="col">Award</td>
                 </tr>
             </thead>
 
@@ -97,11 +137,11 @@
                 <td>Edusave Scholarship Award</td>
             </tr>
         </table>
-    </section>
 
-    <footer>
-        <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
-    </footer>
+        <footer>
+            <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
+        </footer>
+    </div>
 </body>
 
 </html>
