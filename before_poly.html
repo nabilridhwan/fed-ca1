@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/page_styles.css">
+
+    <script src="static/js/darkMode.js" defer></script>
+    <script src="static/js/footerChangeYear.js" defer></script>
 </head>
 
 <body>
@@ -48,6 +51,8 @@
                         <a class="nav-link" href="feedback.html">Feedback</a>
                     </li>
                 </ul>
+
+                <button type="button" id="darkModeButton" class="btn btn-dark">Dark Mode</button>
             </div>
         </div>
     </nav>
@@ -57,7 +62,7 @@
         <div class="main-header row align-items-center py-5">
             <div class="col-lg-6 col-md-12">
                 <h1>My Past<span class="text-pink">.</span></h1>
-                <h3>once upon a time...</h3>
+                <h3 class="lead">once upon a time...</h3>
             </div>
             <div class="col-lg-6 col-md-12">
                 <img src="./static/images/my-past-header.png" alt="My Past Header" width="100%">
@@ -137,11 +142,11 @@
                 <td>Edusave Scholarship Award</td>
             </tr>
         </table>
-
-        <footer>
-            <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
-        </footer>
     </div>
+
+    <footer class="align-items-center footer">
+        <p class="text-white m-0 text-center">Nabil. &copy; <span id="yearSpan"></span></p>
+    </footer>
 </body>
 
 </html>

@@ -409,3 +409,10 @@ let quotes = [
         "author": "Zig Ziglar"
     }
 ]
+
+
+// The quotes variable refer to static/js/quotes.js
+// Apply the quote to the p tag in index.html
+let rQuote = quotes[Math.floor(Math.random() * quotes.length)]
+document.querySelector("#randomQuote").innerHTML = `${rQuote.quote}`
+document.querySelector("#randomQuoteAuthor").innerHTML = `- ${rQuote.author}`

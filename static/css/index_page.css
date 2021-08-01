@@ -1,7 +1,3 @@
-body{
-    transition: all 2s ease;
-}
-
 #randomQuote{
     text-transform: capitalize;
 }

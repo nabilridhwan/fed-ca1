@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="static/css/page_styles.css">
     <link rel="stylesheet" href="static/css/feedback_page.css">
 
+    <script src="static/js/darkMode.js" defer></script>
+    <script src="static/js/footerChangeYear.js" defer></script>
     <script src="static/js/feedback.js" defer></script>
 </head>
 
@@ -53,6 +55,8 @@
                         <a class="nav-link active" href="feedback.html">Feedback</a>
                     </li>
                 </ul>
+
+                <button type="button" id="darkModeButton" class="btn btn-dark">Dark Mode</button>
             </div>
         </div>
     </nav>
@@ -61,7 +65,7 @@
 
         <div class="main-header align-items-center py-5">
             <h1>Feedback<span class="text-pink">.</span></h1>
-            <h3>do you have something to tell me?</h3>
+            <h3 class="lead">do you have something to tell me?</h3>
         </div>
 
         <p id="error"></p>
@@ -136,8 +140,8 @@
         </form>
     </div>
 
-    <footer>
-        <p>Nabil. <span class="text-pink">&copy;</span> 2021</p>
+    <footer class="align-items-center footer">
+        <p class="text-white m-0 text-center">Nabil. &copy; <span id="yearSpan"></span></p>
     </footer>
 </body>
 

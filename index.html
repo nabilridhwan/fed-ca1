@@ -22,13 +22,15 @@
     </script>
 
     <script src="static/js/quotes.js" defer></script>
+    <script src="static/js/darkMode.js" defer></script>
+    <script src="static/js/footerChangeYear.js" defer></script>
     <script src="static/js/index.js" defer></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-md">
             <a class="navbar-brand" id="nav-brand" href="#">Nabil<span class="text-pink">.</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,6 +59,8 @@
                         <a class="nav-link" href="feedback.html">Feedback</a>
                     </li>
                 </ul>
+
+                <button type="button" id="darkModeButton" class="btn btn-dark">Dark Mode</button>
             </div>
         </div>
     </nav>
@@ -65,10 +69,10 @@
     <div class="container-md">
         <!-- Main Header -->
         <div class="main-header row align-items-center py-5">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-6 col-sm-12">
                 <h1 id="main-header-h1">Hello<span class="text-pink">.</span><br>I am<br>Nabil</h1>
 
-                <h3 class="my-2"><span id="ageSpan"></span> • sp dcitp • sp mls • sp dikir</h3>
+                <h3 class="lead my-2"><span id="ageSpan"></span> • sp dcitp • sp mls • sp dikir</h3>
 
 
                 <p class="my-5">
@@ -155,13 +159,13 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <p>Nabil. <span class="text-pink">&copy;</span> <span id="yearSpan"></span></p>
-        </footer>
-
-
     </div>
+
+    <footer class="align-items-center footer">
+            <p class="text-white m-0 text-center">Nabil. &copy; <span id="yearSpan"></span></p>
+    </footer>
+
+
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 body {
-    /* width: 85%; */
-    /* margin: auto; */
     font-family: 'Poppins', sans-serif;
+    /* Set default weight of texts to 400 */
     font-weight: 400;
 }
 
@@ -9,55 +8,17 @@ h1,h2,h3,h4,h5,h6,p{
     color: #262626
 }
 
+/* Add line height so it is easier for users to read! */
 p {
     line-height: 2em;
 }
 
+
 /* Navigation Styling */
-
-nav {
-    padding: 3em 0 3em 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #656565;
-}
-
-#nav-brand {
+.navbar-brand {
     color: #262626;
     font-weight: 700;
     font-size: 1.3em;
-}
-
-#nav-pages {
-    list-style: none;
-    float: right;
-    margin: 0;
-    padding: 0;
-}
-
-#nav-pages li {
-    float: left;
-    margin-right: 2em;
-}
-
-#nav-pages li:last-of-type {
-    margin: 0;
-}
-
-#nav-pages li a {
-    display: block;
-    transition: ease-in-out 0.3s;
-}
-
-#nav-pages li a:hover {
-    transform: scale(1.1);
-}
-
-#nav-pages li a.active {
-    font-weight: 700;
-    color: #262626;
 }
 
 /* Custom pink span color text */
@@ -65,10 +26,6 @@ nav a {
     color: #ED76C1;
 }
 
-/* Section styling */
-/* .main-header {
-    padding: 3em 0;
-} */
 .main-header h1 {
     font-size: 5em;
 }
@@ -81,57 +38,24 @@ nav a {
     color: gray;
 }
 
-/* .main-header img {
-    width: 80%;
-    z-index: -1;
-} */
-
-section {
-    padding: 20px 0 20px 0;
+footer.footer {
+    font-weight: 700;
+    /* Gradient Background */
+    background: linear-gradient(180deg, rgba(255,186,229,1) 0%,  rgba(237,118,193,1) 100%);
 }
 
-section h2 {
-    font-size: 2em;
+footer.footer > .row{
+    height: 100%;
 }
 
-section h3{
-    font-weight: 500;
+table{
+    /* Follow bootstrap border color hence why no color */
+    border: 3px solid;
 }
 
-
-footer {
-    clear: both;
-    text-align: center;
-}
-
-figcaption{
-    color: gray;
-}
-
-figure{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-/* 
-figure > img{
-    width: 100%;
-} */
 
 /* BOOTSTRAP CUSTOM CLASSES */
-.bg-nav{
-    background-color: white !important;
-}
-
-.img-fullsize{
-    width: 100%;
-}
-
-h1{
-    font-weight: 700;
-}
-
-h2{
+h1, h2{
     font-weight: 700;
 }
 
@@ -140,9 +64,20 @@ h3{
 }
 
 img{
+    /* Transition for hovering */
     transition: 0.5s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*  Every other image has a box shadow EXCEPT for the ones in header! */
+.main-header img{
+    box-shadow: none;
 }
 
 img:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
+}
+
+body, .navbar{
+    transition: all 0.3s ease;
 }
