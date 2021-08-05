@@ -5,6 +5,8 @@
 
     <title>Feedback</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +20,6 @@
     </script>
 
     <link rel="stylesheet" href="static/css/page_styles.css">
-    <link rel="stylesheet" href="static/css/feedback_page.css">
 
     <script src="static/js/darkMode.js" defer></script>
     <script src="static/js/footerChangeYear.js" defer></script>
@@ -121,7 +122,8 @@
 
             <div class="form-group py-2">
                 <label for="favColorControl">Favorite Color:</label>
-                <input type="color" name="favColor" id="favColorControl" class="form-control">
+
+                <input type="color" name="favColor" id="favColorControl" class="form-control form-control-color">
             </div>
 
 
@@ -137,7 +139,10 @@
                     placeholder="Your website is..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" d="submitButton">Submit</button>
+            <div class="d-grid my-5">
+                <button type="submit" class="btn bg-pink btn-lg text-white">Submit</button>
+            </div>
+
 
         </form>
     </div>
